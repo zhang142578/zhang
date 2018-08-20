@@ -1,0 +1,6 @@
+﻿[
+{"id":"1","name":"水浒传","price":"1000","num":1,"totle":"1000","delete":false},
+{"id":"2","name":"西游记","price":"200","num":1,"totle":"200","delete":false},
+{"id":"3","name":"红楼梦","price":"500","num":1,"totle":"500","delete":false},
+{"id":"4","name":"三国演义","price":"100","num":1,"totle":"100","delete":false}
+]
