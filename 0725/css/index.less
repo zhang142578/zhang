@@ -1,0 +1,97 @@
+/*
+less  声明变量
+@base: 值；*/
+
+/*作用域：  全局变量  局部变量*/
+@bodybg: #dadcda;
+body {
+  background-color: @bodybg;
+}
+
+.block {
+  @border: 1px solid red;
+  @width: 200px;
+  @height: 200px;
+  width: @width;
+  height: @height;
+  border: @border;
+}
+
+/*计算问题*/
+@blockw: 300px;
+@blockh: 300px;
+/*颜色的运算*/
+@color: #fff- #0f0;
+.small {
+  width: @blockw;
+  height: @blockh;
+  border: 1px solid red;
+  background-color: @color;
+  .borderradius(50px);
+}
+
+//混合使用
+/*声明函数  带参的函数  参数有默认值*/
+.borderradius(@raius:25px) {
+  border-radius: @raius;
+}
+
+/*
+嵌套规则*/
+
+.ullist {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  border: 1px solid red;
+  background-color: blue;
+  li {
+    list-style: none;
+    float: left;
+    width: 150px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    &:hover {
+      background-color: orange;
+      color: black;
+    }
+  }
+}
+
+/*
+less  stylus*/
+
+/*内置的函数*/
+@colorbg: lighten(#000, 12.5%);
+@bgbackcolor: darken(#ff00df, 0%);
+.con_par {
+  width: 400px;
+  height: 200px;
+  border: 1px solid red;
+  background-color: @bgbackcolor;
+}
+
+/*嵌套关系*/
+@colora: #ffd2f1;
+@link-hover: darken(@colora, 80%);
+@link-active: lighten(@colora, 60%);
+@a-size: 14px;
+@a_link-hover: ceil((@a-size*1.3));
+@a_active: floor((@a-size*1.1));
+a {
+  text-decoration: none;
+  color: @colora;
+  &:hover {
+    color: @link-hover;
+    font-size: @a_link-hover;
+  }
+  &:active {
+    color: @link-active;
+    font-size: @a_active;
+  }
+}
+
+/*less  变量的计算  变量的声明  作用域  内嵌  混合使用  内置函数*/

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="./css/bootstrap.css"/>
+    <!--<style>
+
+       .block{
+           width: 500px;
+           height: 700px;
+           border: 1px solid black;
+           margin:  0 auto;
+           display: flex;
+           flex-direction: column;
+       }
+        .block_child{
+            width: 500px;
+            height: 100px;
+            border-bottom: 1px solid red;
+            display: flex;
+            flex-direction: row;
+        }
+        .chi_1{
+            flex: 1;
+            height: 100px;
+            border: 1px solid red;
+        }
+        .chi_2{
+            flex: 5;
+            height: 100px;
+            border: 1px solid red;
+        }
+    </style>-->
+    <style>
+        .block{
+            border: 1px solid red;
+            height: 300px;
+        }
+        /*css3 里面的媒体查询*/
+        /*.block{
+            width: 1200px;
+            height: 300px;
+            border: 1px solid red;
+            margin:  0 auto;
+        }*/
+        /*@media screen and (max-width: 1200px) {
+            .block{
+                width: 1170px;
+            }
+        }
+        @media screen and (max-width: 992px) {
+            .block{
+                width: 970px;
+            }
+        }
+        @media screen and (max-width: 768px) {
+            .block{
+                width: 750px;
+            }
+        }*/
+     /*   @media screen and (min-width:768px) {
+           .block{
+               width: 750px;
+           }
+        }
+        @media screen and (min-width:992px) {
+            .block{
+                width:970px ;
+            }
+        }
+        @media screen and (min-width: 1200px) {
+            .block{
+                width: 1170px;
+            }
+        }*/
+    </style>
+</head>
+<body>
+  <!--bootstrap  里面的布局容器-->
+  <!-- 网站的布局  固定布局（固定宽和高）  流动布局（宽度百分比布局）  弹性布局 （产生行和列） &lt;!&ndash;fiex&ndash;&gt;-->
+
+  <!--固定布局-->
+  <!--<div class="container block">
+
+  </div>-->
+  <!--流动布局-->
+  <div class="container-fluid block">
+
+  </div>
+  <!--<div class="block">
+   <div class="block_child">
+       <div class="chi_1"></div>
+       <div class="chi_2"></div>
+   </div>
+  </div>-->
+<!--<div class="block">
+
+</div>-->
+</body>
+</html>
